@@ -1,0 +1,65 @@
+﻿<style type="text/css">
+    .ext {
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .call-status {
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+        .call-status.available {
+            background-image: url(app/contents/images/available.png);
+            background-position: left center;
+            background-repeat: no-repeat;
+            padding-left: 25px;
+        }
+        .call-status.on-call {
+            background-image: url(app/contents/images/on-call.png);
+            background-position: left center;
+            background-repeat: no-repeat;
+            padding-left: 25px;
+        }
+
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .ext-col {
+        width: 20%;
+    }
+
+    .img-col {
+        width: 10%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 70px;
+    }
+</style>
+
+<div class="loader" ng-hide="operators">Waiting...</div>
+
+<table>
+    <tbody>
+    <tr ng-repeat="operator in operators">
+        <td class="img-col">
+            <img src="app/contents/images/no-image.jpg" alt="operator photo" />
+        </td>
+        <td class="ext-col">
+            <div class="ext">Ext: {{operator.extension}}</div>
+            <div class="call-status"
+                 ng-class="{ 'available': operator.callStatus === 0, 'on-call': operator.callStatus === 1 }">
+                {{operator.callStatusText}}
+            </div>
+        </td>
+        <td>
+            <div class="name">{{operator.name}}</div>
+        </td>
+    </tr>
+    </tbody>
+</table>

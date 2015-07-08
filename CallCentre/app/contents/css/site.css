@@ -1,0 +1,25 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.container {}
+
+.title {
+    background-color:  lightblue;
+    border-bottom: solid 5px steelblue;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 20px;
+}
+
+table tbody tr td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.loader {
+    color: maroon;
+    padding: 10px;
+}
