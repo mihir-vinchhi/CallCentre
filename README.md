@@ -19,9 +19,20 @@ In order to run the demo application follow steps below
 
 1. Download the solution or clone repository
 2. Open Solution
-3. Open NuGet Package Manager Console
+3. Restore NuGet Packages - By building the solution
 4. Open web.config and update connection string (key = CallCentreContext)
-5. Run Update-Database command (This command will create database, create table and insert demo data)
-6. Run the application
+5. Open NuGet Package Manager Console
+6. Run Update-Database command (This command will create database, create table and insert demo data)
+7. Run the application :-)
 
-:-)
+In order to run JavaScript unit tests following node packages are required to be installed using command npm. To install node visit https://nodejs.org/download/.
+
+1. Karma - npm install -g karma
+2. Karma Jasmine - npm install -g karma-jasmine
+3. Karma Chrome Launcher - npm install -g karma-chrome-launcher
+4. Karma Command Line - npm install -g karma-cli
+
+JavaScript unit tests can be run using following two methods
+
+1. ReSharper
+2. From command prompt using command "karma start karma.conf.js" in web project directory
