@@ -1,19 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CallCentre.Core.EF;
+using CallCentre.Core.Framework;
 using CallCentre.Core.Models;
 
 namespace CallCentre.Core.Queries.Operators
 {
+    // CQRS Query
     // Naming convension: Queries.{controller}.{method}Query
     public class GetQuery
     {
-        private readonly CallCentreContext callCentreContext = new CallCentreContext();
+        // Should be injected
+        private readonly IRepository repository = new EFRepository();
 
         public GetResult Execute(GetParameters parameters)
         {
             return new GetResult
             {
-                Operators = callCentreContext.Operators
+                Operators = repository.Query<Operator>()
                     .OrderBy(o => o.Extension)
                     .Select(o =>
                         new OperatorResult

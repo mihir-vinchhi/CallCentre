@@ -10,7 +10,7 @@ describe("operators service", function () {
 
     var $log;
 
-    beforeEach(module("OperatorStatusList"));
+    beforeEach(module("CallCentre"));
 
     beforeEach(function () {
         $log = {

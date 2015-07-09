@@ -47,18 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EF\EFRepository.cs" />
+    <Compile Include="Framework\IRepository.cs" />
     <Compile Include="Migrations\201507090612363_Initial.cs" />
     <Compile Include="Migrations\201507090612363_Initial.Designer.cs">
       <DependentUpon>201507090612363_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\CallCentreContext.cs" />
+    <Compile Include="EF\CallCentreContext.cs" />
     <Compile Include="Models\Operator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\Operators\GetQuery.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

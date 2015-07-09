@@ -1,4 +1,5 @@
 using System.Data.Entity.Migrations;
+using CallCentre.Core.EF;
 using CallCentre.Core.Models;
 
 namespace CallCentre.Core.Migrations

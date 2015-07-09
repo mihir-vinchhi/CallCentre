@@ -2,7 +2,7 @@
 
     "use strict";
 
-    var module = angular.module("OperatorStatusList", ["ngRoute"]);
+    var module = angular.module("CallCentre", ["ngRoute"]);
 
     var configureRoute = function ($routeProvider, $locationProvider) {
         $routeProvider

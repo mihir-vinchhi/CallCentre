@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Annotations;
+using CallCentre.Core.Models;
 
-namespace CallCentre.Core.Models
+namespace CallCentre.Core.EF
 {
     public class CallCentreContext : DbContext
     {
@@ -12,6 +13,8 @@ namespace CallCentre.Core.Models
         }
 
         public virtual DbSet<Operator> Operators { get; set; }
+
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

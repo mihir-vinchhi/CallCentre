@@ -11,6 +11,6 @@
 
     operatorsCtrl.$inject = ["$scope", "operatorsService"];
 
-    angular.module("OperatorStatusList").controller("operatorsCtrl", operatorsCtrl);
+    angular.module("CallCentre").controller("operatorsCtrl", operatorsCtrl);
 
 })(angular);

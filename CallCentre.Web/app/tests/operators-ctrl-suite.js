@@ -9,7 +9,7 @@ describe("operators with status", function () {
 
     "use strict";
 
-    beforeEach(module("OperatorStatusList"));
+    beforeEach(module("CallCentre"));
 
     it("should display list of operators with thier status", inject(function($rootScope, $controller, $httpBackend) {
         var $scope = $rootScope.$new();
