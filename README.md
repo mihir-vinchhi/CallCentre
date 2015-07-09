@@ -22,8 +22,9 @@ In order to run the demo application follow steps below
 3. Restore NuGet Packages - By building the solution
 4. Open web.config and update connection string (key = CallCentreContext)
 5. Open NuGet Package Manager Console
-6. Run Update-Database command (This command will create database, create table and insert demo data)
-7. Run the application :-)
+6. Select project CallCentre.Core
+7. Run Update-Database command (This command will create database, create table and insert demo data)
+8. Run the application :-)
 
 In order to run JavaScript unit tests following node packages are required to be installed using command npm. To install node visit https://nodejs.org/download/.
 
