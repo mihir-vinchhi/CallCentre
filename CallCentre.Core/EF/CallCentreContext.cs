@@ -14,8 +14,6 @@ namespace CallCentre.Core.EF
 
         public virtual DbSet<Operator> Operators { get; set; }
 
-
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Operator>()
