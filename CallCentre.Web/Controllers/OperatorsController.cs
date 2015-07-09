@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
-using OperatorStatusList.Queries.Operators;
+using CallCentre.Core.Queries.Operators;
 
-namespace OperatorStatusList.Controllers
+namespace CallCentre.Web.Controllers
 {
     public class OperatorsController : ApiController
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using OperatorStatusList.Models;
+using CallCentre.Core.Models;
 
-namespace OperatorStatusList.Queries.Operators
+namespace CallCentre.Core.Queries.Operators
 {
     // Naming convension: Queries.{controller}.{method}Query
     public class GetQuery
@@ -14,6 +14,7 @@ namespace OperatorStatusList.Queries.Operators
             return new GetResult
             {
                 Operators = callCentreContext.Operators
+                    .OrderBy(o => o.Extension)
                     .Select(o =>
                         new OperatorResult
                         {
@@ -30,15 +31,18 @@ namespace OperatorStatusList.Queries.Operators
         }
     }
 
+    // Naming convension: Queries.{controller}.{method}Parameters
     public class GetParameters
     {
     }
 
+    // Naming convension: Queries.{controller}.{method}Result
     public class GetResult
     {
         public IEnumerable<OperatorResult> Operators { get; set; }
     }
 
+    // Naming convension: Queries.{controller}.{child-model}Result
     public class OperatorResult
     {
         public int ID { get; set; }

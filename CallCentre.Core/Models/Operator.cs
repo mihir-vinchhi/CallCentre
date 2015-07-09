@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OperatorStatusList.Models
+namespace CallCentre.Core.Models
 {
     public class Operator
     {

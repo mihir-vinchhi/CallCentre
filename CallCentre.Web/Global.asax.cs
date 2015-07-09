@@ -2,7 +2,7 @@
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 
-namespace OperatorStatusList
+namespace CallCentre.Web
 {
     public class WebApiApplication : HttpApplication
     {

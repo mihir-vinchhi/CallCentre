@@ -2,7 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Annotations;
 
-namespace OperatorStatusList.Models
+namespace CallCentre.Core.Models
 {
     public class CallCentreContext : DbContext
     {

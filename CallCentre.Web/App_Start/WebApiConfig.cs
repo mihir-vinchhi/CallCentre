@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace OperatorStatusList
+namespace CallCentre.Web
 {
     public static class WebApiConfig
     {
